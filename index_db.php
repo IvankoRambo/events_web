@@ -201,5 +201,3 @@ function registration_difference($db, $n1, $n2, $diff){
 	return ($query->fetchAll(PDO::FETCH_ASSOC));
 	
 }
-
-

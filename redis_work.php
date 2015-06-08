@@ -64,5 +64,3 @@ function showLastTenUsers($db, $last_user_id){
 	return $last_names;
 	
 }
-
-

@@ -23,7 +23,7 @@ function createUser($db, $user_name, $email, $password, $date, $is_active = 0){
 	$query->bindParam(":password", $password, PDO::PARAM_STR);
 	$query->bindParam(":date", $date, PDO::PARAM_STR);
 	$query->bindParam(":status", $is_active, PDO::PARAM_INT);
-	
+
 	return $query->execute();
 }
 

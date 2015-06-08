@@ -15,8 +15,6 @@ function getConnection($config_path){
 		
 }
 
-//some changes
-
 
 function createUser($db, $user_name, $email, $password, $date, $is_active = 0){
 	$query = $db->prepare("INSERT INTO user (name, email, password, date_create, is_active) VALUE (:name, :email, PASSWORD(:password), :date, :status)");
@@ -144,6 +142,8 @@ function addEventForUser($db, $user_id, $event_id){
 /*
  * mode can be 'me' or 'others'
  */
+
+
 function getUserEvents($db, $user_id, $mode){
 	
 	switch ($mode){
